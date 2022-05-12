@@ -55,18 +55,37 @@ speed of sound in the air at 20ºC (68ºF) = 343m/s
 
 
 ### PROGRAM 
-
-### Distance vs measurement table 
-
-
-
-
-
+```
+#define echoPin 9
+#define trigPin 10
+long duration;
+int distance;
 
 
+void setup(){
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+  Serial.begin(9600);
+}
+void loop(){
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+  
+  duration = pulseIn(echoPin, HIGH);
+  distance = duration * 0.034 / 2;
+  Serial.print("Distance: ");
+  Serial.print(distance);
+  Serial.print(" cm");
+}
+````
+### Output
 
+
+![Output](.//outimg.png)
+![Output](.//outimg1.png)
 ### RESULTS
-
+An FSR(force sensitive resistor) has been interfaced and output voltage has been scaled to obtain the pressure applied.
 
 
  
