@@ -1,8 +1,7 @@
 # EXPERIMENT-NO--05-Distance measurement using Ultrasonic sensor
 
 ## AIM: 
-To interface an FSR(force sensitive resistor) and scale the output voltage obtained to pressure applied 
- 
+To interface the Ultrasonic sensor to measure the distance of the obstacles.
 ### COMPONENTS REQUIRED:
 1.	ultrasonic sensor module HC-SR04
 2.	1 KΩ resistor 
