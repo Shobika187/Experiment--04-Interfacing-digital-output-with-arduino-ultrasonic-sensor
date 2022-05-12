@@ -84,7 +84,6 @@ void loop(){
 ![Output](.//outimg.png)
 ![Output](.//outimg1.png)
 ### RESULTS
-An FSR(force sensitive resistor) has been interfaced and output voltage has been scaled to obtain the pressure applied.
-
+ The distance of the obstacles is measured using ultrasonic sensor.
 
  
